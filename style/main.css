@@ -50,9 +50,10 @@
 .carousel-item img{
     width: 100%; 
     height: 100%;
-    /* object-fit: cover; */
+   
     
 }
+
 .intro-text-area{
     margin: 50px 0;
     width: 100%;

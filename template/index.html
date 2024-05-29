@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmourScent</title>
+    <link rel="stylesheet" href="../style/responsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+
+<body >
+  <div class="main">
+    <!-- Header của trang web -->
+        <header class="header">
+            <!-- navbar -->
+            <nav class="navbar navbar-expand-lg bg-warning-subtle  bg-transparent">
+                <div class="container-fluid">
+                  <!-- LOGO -->
+                  <a class="navbar-brand  " href="#">
+                    <img src="../images/nen.jpg" alt="AmourScent" width="45" height="30" class="d-inline-block align-text-top  ">
+                    AmourScent
+                  </a>
+                  <!-- Toggler -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                     data-bs-target="#navbarToggleExternalContent" 
+                     aria-controls="navbarToggleExternalContent" 
+                     aria-expanded="false" 
+                     aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  <!-- sidebar -->
+                  <div class="sidebar offcanvas bg-warning-subtle offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <!-- sidebar-header -->
+                    <div class="offcanvas-header border-bottom">
+                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">AmourScent</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <!-- Sidebar-body -->
+                    <div class="offcanvas-body ">
+                      <ul class="navbar-nav justify-content-end align-items-center fs-5 flex-grow-1 pe-3">
+                        <li class="nav-item mx-2">
+                          <a class="nav-link " aria-current="page" href="#">Trang Chủ</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                          <a class="nav-link" href="#Nen-thom">Nến thơm</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                          <a class="nav-link" href="#product">Tinh dầu thơm</a>
+                        </li> <li class="nav-item mx-2">
+                          <a class="nav-link" href="#Da">Đá năng lượng</a>
+                      </ul>
+                      <!-- Login/Signup -->
+                      <div class="  d-flex justify-content-center align-items-center gap-3">
+                        <a href="./lienhe.html" 
+                            class="text-dark text-decoration-none px-3 py-1 rounded-4" style="background-color: tomato;">Liên hệ</a>
+                     </div>
+                    </div>
+                  </div>
+                </div>
+            </nav>
+        </header>
+        <div class="banner-intro">
+           <!-- Banner -->
+           <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="4000">
+                <img src="../images/slider-1.jpg" class="d-block w-100 img-fluid" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img src="../images/slider-2.jpg" class="d-block w-100 img-fluid" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img src="../images/slider-3.jpg" class="d-block w-100 img-fluid" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img src="../images/slider4.jpg" class="d-block w-100 img-fluid"  alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- Intro text area -->
+          <div class="intro-text-area">
+            <div class="text">
+                <h1 style="font-size: 30px;">AmourScent</h1>
+                <p style="font-size: 15px;">Mang đến cho bạn <br>
+                   Sự thư giãn từ mùi hương, decor không gian từ ánh nến</p>
+            </div>
+        </div>
+        </div>
+        <div class="container">
+          <!-- Nến thơm -->
+          <h1 id="Nen-thom"  class="heading"> Nến thơm</h1>
+          <div class="box-container">
+            <div class="box">
+              <div class="the-front">
+                <img src="../images/Hinh-Da-Xoa-Nen/product-Nen.png" alt="">
+                <h3>Nến thơm Amour-Relaxing Scent</h3>
+                <p class="product-price">149.000₫</p>
+              </div>
+              <div class="box-intro">
+                  <h1 class="heading-detail">
+                    Mô tả sản phẩm
+                  </h1>
+                  <p class="detail">
+                    Gỗ đàn hương ấm áp pha trộn với hương thơm của hoa thơm, hương gỗ sồi cùng xạ hương và trái lê.
+                  </p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="the-front">
+                <img src="../images/Hinh-Da-Xoa-Nen/product-Nen-2.png" alt="">
+                <h3>Nến thơm Amour-So Nice</h3>
+                <p class="product-price">249.000₫</p>
+              </div>
+              <div class="box-intro">
+                <h1 class="heading-detail">
+                  Mô tả sản phẩm
+                </h1>
+                <p class="detail">
+                  Những bông hoa hướng dương rạng rỡ được sưởi ấm bởi ánh mặt trời hòa quyện với hoa cúc ngọt ngào,
+                   hoa huệ dịu dàng được tạo điểm nhấn bởi làn sương biển mát mẻ, hổ phách và gỗ sồi.
+                </p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="the-front">
+                <img src="../images/Hinh-Da-Xoa-Nen/procduct-Nen-3.png" alt="">
+                <h3>Nến thơm Amour-Benevolence</h3>
+                <p class="product-price">299.000₫</p>
+              </div>
+              <div class="box-intro">
+                <h1 class="heading-detail">
+                  Mô tả sản phẩm
+                </h1>
+                <p class="detail">
+                  Muối biển quyện với màu xanh biển lấp lánh và bạc hà cùng thảo mộc xanh mát hòa quyện với hổ phách vàng lấp lánh, và xạ hương.
+                </p>
+              </div>
+            </div>  
+          </div>
+           <!-- Tinh dầu -->
+           <h1 id="Tinh-Dau" class="heading-Tinh-Dau">Tinh dầu thơm</h1>
+            <div class="box-container-Tinh-Dau">
+              <div class="box-Tinh-Dau">
+                <div class="thefront-Tinh-Dau">
+                  <img src="./images/Hinh-Da-Xoa-Nen/tinh dầu biển.png" alt="">
+                  <h3>Tinh dầu Amour-Hương biển</h3>
+                  <p class="product-price-Tinh-Dau">195.000₫</p>
+                </div>
+                <div class="box-intro-Tinh-Dau">
+                  <h1 class="heading-detail-Tinh-Dau"> Mô tả sản phẩm </h1>
+                  <p class="detail-Tinh-Dau">
+                    Mở ra vùng biển khơi với sóng vỗ rì rào và bãi cát trắng hiền hòa. Tinh dầu cao cấp Ocean chứa đựng viên “Vitamin Sea” mát lành có sức mạnh làm hài lòng bất kỳ tâm hồn khó tính nào. 
+                    Mùi hương của Ocean nhẹ nhàng, thoảng hương trái cây và tươi mát hương biển. Kết thúc bằng sự choáng ngợp của hương da thuộc, tựa như cảm giác khi bạn phóng mắt ra miền biển rộng lớn không thấy đường chân trời. 
+                  </p>
+                </div>
+              </div>
+
+              <div class="box-Tinh-Dau">
+                <div class="thefront-Tinh-Dau">
+                  <img src="./images/Hinh-Da-Xoa-Nen/tinh dầu paradise.png" alt="">
+                  <h3>Tinh dầu Amour-Hương trái cây</h3>
+                  <p class="product-price-Tinh-Dau">210.000₫</p>
+                </div>
+                <div class="box-intro-Tinh-Dau">
+                  <h1 class="heading-detail-Tinh-Dau"> Mô tả sản phẩm </h1>
+                  <p class="detail-Tinh-Dau">
+                    Những phút giây đầu tiên thưởng thức hương thơm, cái hương vị thanh mát, có chút cay nhẹ của Eucalyptus & Peppermint, tạo cảm giác refresh, phảng phất nhè nhẹ mùi hương của gỗ đàn hương vừa đủ để kích thích khứu giác. 
+                    Hương thơm đi càng sâu sẽ càng cảm nhận được sự thư thái, dễ chịu và thanh sạch lan tỏa khắp căn phòng.
+                  </p>
+                </div>
+              </div>
+
+              <div class="box-Tinh-Dau">
+                <div class="thefront-Tinh-Dau">
+                  <img src="./images/Hinh-Da-Xoa-Nen/Tinh dầu gỗ.png" alt="">
+                  <h3>Tinh dầu Amour-Hương gỗ</h3>
+                  <p class="product-price-Tinh-Dau">265.000₫</p>
+                </div>
+                <div class="box-intro-Tinh-Dau">
+                  <h1 class="heading-detail-Tinh-Dau"> Mô tả sản phẩm </h1>
+                  <p class="detail-Tinh-Dau">
+                    Một khu vườn hoang dã bí ẩn được lấy cảm hứng từ sự hòa quyện giữa con người và thiên nhiên. Một phiên bản hoàn hảo nếu bạn là người yêu cách màn đêm chiếm lĩnh không gian tĩnh lặng. Mở đầu bằng một chút hương thơm gỗ tiêu cay nồng ấm áp rồi dần dần chuyển mình trở nên quyến rũ cùng hoắc hương hổ phách.
+                     Một mùi hương phá cách khi kết thúc bằng dấu ấn tương phản khó phai từ cỏ vetiver mạnh mẽ cùng sự ngọt ngào ấm nóng từ vani. 
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Đá -->
+            <h1 id="Da" class="heading-Da"> Đá năng lượng</h1>
+            <div class="box-container-Da">
+              <div class="box-Da">
+                <div class="thefront-Da">
+                  <img src="../images/Hinh-Da-Xoa-Nen/aragonite.png" alt="">
+                  <h3>Đá Aragonite</h3>
+                  <p class="product-price-Da">250.000₫</p>
+                </div>
+                <div class="box-intro-Da">
+                  <h1 class="heading-detail-Da">Mô tả sản phẩm</h1>
+                  <p class="detail-Da">Aragonite đem tới sức khỏe và hỗ trợ, giúp gia chủ vượt qua cơn bực tức và cảm xúc căng thẳng. </p>
+                </div>
+              </div>
+              <div class="box-Da">
+                <div class="thefront-Da">
+                  <img src="../images/Hinh-Da-Xoa-Nen/rose.png" alt="">
+                  <h3>Đá Rose Quarzt</h3>
+                  <p class="product-price-Da">300.000₫</p>
+                </div>
+                <div class="box-intro-Da">
+                  <h1 class="heading-detail-Da">Mô tả sản phẩm</h1>
+                  <p class="detail-Da">Rose Quarzt giúp người ta thu hút tình yêu, cũng như chữa lành những trải nghiệm tình cảm đau đớn.</p>
+                </div>
+              </div>
+              <div class="box-Da">
+                <div class="thefront-Da">
+                  <img src="../images/Hinh-Da-Xoa-Nen/Ruby_da.png" alt="">
+                  <h3>Đá Ruby</h3>
+                  <p class="product-price-Da">500.000₫</p>
+                </div>
+                <div class="box-intro-Da">
+                  <h1 class="heading-detail-Da">Mô tả sản phẩm</h1>
+                  <p class="detail-Da">Ánh sắc rực rỡ và cao quý của đá Ruby chính là vẻ đẹp tượng trưng cho mặt trời, quyền lực mạnh mẽ và sự tự do. </p>
+                </div>
+              </div>
+            </div>
+       </div>
+
+        <footer class="footer">
+            @copyright Võ Minh Thiện DH52105184
+        </footer>
+  </div>
+        <script src="../scripts/index.js"></script>
+
+</body>
+</html>

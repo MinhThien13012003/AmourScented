@@ -1,0 +1,330 @@
+.main{
+    max-width: 1280px;
+    padding: 0;
+    margin: 0 auto;
+    height: 600px;
+    align-items: center;
+}
+
+/* .main .header{
+
+} */
+.header{
+    width:  100%;
+}
+ .header .navbar{
+    width: 100%;
+    height: 100px;
+    font-size: large;
+    font-weight: bold;
+ 
+}
+.header .navbar-brand {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.banner-intro{
+    width: 100%;
+    height: auto;
+    margin:  0 auto; 
+}
+.carousel-inner {
+    width: 100%;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    margin-top: 10px;
+    
+} 
+    
+/* .list-image{
+    transform: translateX();
+} */
+ .carousel-inner .carousel-item{
+    width: 100%;
+    height: 400px;
+    position: relative;
+  
+}
+.carousel-item img{
+    width: 100%; 
+    height: 100%;
+    /* object-fit: cover; */
+    
+}
+.intro-text-area{
+    margin: 50px 0;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    background-image: linear-gradient(to right, rgb(0, 0, 0, 1), rgba(0,0,0,0)),url(../images/intro-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.text{
+    padding: 3rem;
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.container{
+    padding: 15px 9%;
+    padding-bottom: 100px;
+}
+
+.container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    gap: 15px;
+    
+}
+
+
+
+.container .box-container .box{
+    box-shadow: 0px 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    background: var(--bg-color);
+    text-align: center;
+    padding: 30px 20px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease-in-out;
+}
+.box:hover{
+    transform: rotateY(180deg);
+}
+
+.container .box-container .box .box-intro{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: var(--bs-warning-bg-subtle);
+    color: #333;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+
+.container .heading{
+    text-align: center;
+    padding-bottom: 15px;
+    color: black;
+    text-shadow: 0px 5px 15px rgba(0,0,0,.2);
+    font-size: 50px;
+}
+.container .box-container .box .box-intro h1{
+    padding: 30px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+
+.container .box-container .box .box-intro p{
+
+    padding: 30px;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: center;
+}
+
+.container .box-container .box img{
+    height: 150px;
+}
+
+.container .box-container .box h3{
+    color: #444;
+    font-size: 22px;
+    padding: 10px 0;
+}
+
+.container .box-container .box .product-price{
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* Tinh dầu */
+.container .box-container-Tinh-Dau{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    gap: 15px;
+}
+.container .box-container-Tinh-Dau .box-Tinh-Dau{
+    box-shadow: 0px 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    background: var(--bg-color);
+    text-align: center;
+    padding: 30px 20px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease-in-out;
+}
+
+.box-Tinh-Dau:hover{
+    transform: rotateY(180deg);
+}
+
+.container .box-container-Tinh-Dau .box-Tinh-Dau .box-intro-Tinh-Dau{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: var(--bs-warning-bg-subtle);
+    color: #333;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+.container .heading-Tinh-Dau{
+    margin: 30px;
+    text-align: center;
+    padding-bottom: 15px;
+    color: black;
+    text-shadow: 0px 5px 15px rgba(0,0,0,.2);
+    font-size: 50px;
+}
+
+.container .box-container-Tinh-Dau .box-Tinh-Dau .box-intro-Tinh-Dau h1{
+    padding: 30px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+
+.container .box-container-Tinh-Dau .box-Tinh-Dau .box-intro-Tinh-Dau p{
+
+    padding: 30px;
+    margin: 25px;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: center;
+}
+
+.container .box-container-Tinh-Dau .box-Tinh-Dau img{
+    height: 200px;
+}
+
+.container .box-container-Tinh-Dau .box-Tinh-Dau h3{
+    color: #444;
+    font-size: 22px;
+    padding: 10px 0;
+}
+
+.container .box-container-Tinh-Dau .box-Tinh-Dau .product-price-Tinh-Dau{
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* Đá */
+.container .box-container-Da{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    gap: 15px;
+}
+.container .box-container-Da .box-Da{
+    box-shadow: 0px 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    background: var(--bg-color);
+    text-align: center;
+    padding: 30px 20px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease-in-out;
+}
+
+.box-Da:hover{
+    transform: rotateY(180deg);
+}
+
+.container .box-container-Da .box-Da .box-intro-Da{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: var(--bs-warning-bg-subtle);
+    color: #333;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+.container .heading-Da{
+    margin: 30px;
+    text-align: center;
+    padding-bottom: 15px;
+    color: black;
+    text-shadow: 0px 5px 15px rgba(0,0,0,.2);
+    font-size: 50px;
+}
+
+.container .box-container-Da .box-Da .box-intro-Da h1{
+    padding: 30px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+
+.container .box-container-Da .box-Da .box-intro-Da p{
+
+    padding: 30px;
+    margin: 25px;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: center;
+}
+.container .box-container-Da .box-Da img{
+    height: 200px;
+}
+
+.container .box-container-Da .box-Da h3{
+    color: #444;
+    font-size: 22px;
+    padding: 10px 0;
+}
+
+.container .box-container-Da .box-Da .product-price-Da{
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.footer{
+    width: 1280px;
+    margin: 0px auto;
+    margin-top: 30px;
+    background-color: rgb(165, 143, 236);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px 20px;
+}

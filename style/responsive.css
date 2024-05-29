@@ -1,0 +1,7 @@
+/* responsive.css */
+@media (max-width: 990px) {
+  .intro-text-area .text{
+    margin-left: 40px;
+  }
+}
+

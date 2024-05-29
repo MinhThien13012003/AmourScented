@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AmourScent</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="../style/responsive.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../style/main.css">
@@ -17,6 +18,9 @@
 
 <body >
   <div class="main">
+    <div class="loader-wrapper">
+      <img src="./images/loader-img.gif" alt="">
+    </div>
     <!-- Header của trang web -->
         <header class="header">
             <!-- navbar -->
@@ -243,6 +247,13 @@
         </footer>
   </div>
         <script src="../scripts/index.js"></script>
-
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script>
+          $(window).on("load", function () {
+          setTimeout(function () {
+            $(".loader-wrapper").fadeOut();
+            }, 3000)
+          });
+        </script>
 </body>
 </html>

@@ -3,19 +3,28 @@
     padding: 0;
     box-sizing: border-box;
 }
-#main{
+#main-contact{
     width: 1280px;
     margin: 0 auto;
+   margin-top: 50px;
     height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(../images/tải\ xuống.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
 }
-#main .content-lienhe{
+#main-contact .content-lienhe{
     display: block;
     margin: 0 auto;
- 
+    text-decoration: none;
    
+}
+#main-contact .content-lienhe a{
+    text-decoration: none;
+    color: white;
 }
 .mt-8{
     margin-top: 8px !important;
@@ -75,4 +84,22 @@
     background-color: #000;
     color: white;
     cursor: pointer;
+}
+
+.contact-form .error{
+    color: red;
+    
+}
+
+
+.action-button {
+    bottom: 5%;
+    position: fixed;
+    display: none;
+    
+}
+
+.action-button .action-item img{
+    width: 90px;
+    height: 90px;
 }

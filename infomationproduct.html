@@ -155,12 +155,15 @@
     document.getElementById('product-name').textContent = product?.name;
     document.getElementById('product-price').textContent = product?.price;
     const ratingContainer = document.getElementById('product-rating');
+<<<<<<< HEAD
     ratingContainer.innerHTML = '';
     for (let i = 0; i < product?.rating; i++) {
       const star = document.createElement('i');
       star.className = 'fa-solid fa-star';
       ratingContainer.appendChild(star);
     }
+=======
+>>>>>>> 15f51d310e2fd84a3269bdbbd0699f62e09a7d17
 
     document.getElementById('product-description').textContent = product.description;
 

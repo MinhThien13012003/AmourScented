@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi tiết sản phẩm</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="path/to/fontawesome/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div id="product-list" class="box-container">
+      <!-- Product items -->
+      <div class="box" onclick="showProductDetail('nen1')">
+        <div class="the-front">
+          <img src="../images/Hinh-Da-Xoa-Nen/product-Nen.png" alt="">
+          <h3>Nến thơm Amour-Relaxing Scent</h3>
+          <p class="product-price">149.000₫</p>
+          <span class="starRate">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </span>
+        </div>
+      </div>
+      <div class="box" onclick="showProductDetail('nen2')">
+        <div class="the-front">
+          <img src="../images/Hinh-Da-Xoa-Nen/product-Nen-2.png" alt="">
+          <h3>Nến thơm Amour-So Nice</h3>
+          <p class="product-price">249.000₫</p>
+          <span class="starRate">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Add more product items as needed -->
+    </div>
+  </div>
+
+  <div id="product-detail-container" class="product-detail-container" style="display: none;">
+    <div class="product-detail">
+      <div class="product-image">
+        <img id="product-image" src="" alt="">
+      </div>
+      <div class="product-info">
+        <h1 id="product-name" class="product-name"></h1>
+        <p id="product-price" class="product-price"></p>
+        <span id="product-rating" class="starRate"></span>
+        <div class="product-description">
+          <h2>Mô tả sản phẩm</h2>
+          <p id="product-description"></p>
+        </div>
+        <button class="btn-product">Thêm giỏ hàng</button>
+        <button class="btn-back" onclick="goBackToList()">Quay lại</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const products = {
+      'nen1': {
+        image: '../images/Hinh-Da-Xoa-Nen/product-Nen.png',
+        name: 'Nến thơm Amour-Relaxing Scent',
+        price: '149.000₫',
+        rating: 5,
+        description: 'Gỗ đàn hương ấm áp pha trộn với hương thơm của hoa thơm, hương gỗ sồi cùng xạ hương và trái lê.'
+      },
+      'nen2': {
+        image: '../images/Hinh-Da-Xoa-Nen/product-Nen-2.png',
+        name: 'Nến thơm Amour-So Nice',
+        price: '249.000₫',
+        rating: 5,
+        description: 'Những bông hoa hướng dương rạng rỡ được sưởi ấm bởi ánh mặt trời hòa quyện với hoa cúc ngọt ngào, hoa huệ dịu dàng được tạo điểm nhấn bởi làn sương biển mát mẻ, hổ phách và gỗ sồi.'
+      },
+      // Add more products as needed
+    };
+
+    function showProductDetail(productId) {
+      const product = products[productId];
+      document.getElementById('product-image').src = product.image;
+      document.getElementById('product-name').textContent = product.name;
+      document.getElementById('product-price').textContent = product.price;
+      
+      const ratingContainer = document.getElementById('product-rating');
+      ratingContainer.innerHTML = '';
+      for (let i = 0; i < product.rating; i++) {
+        const star = document.createElement('i');
+        star.className = 'fa-solid fa-star';
+        ratingContainer.appendChild(star);
+      }
+
+      document.getElementById('product-description').textContent = product.description;
+
+      document.getElementById('product-list').style.display = 'none';
+      document.getElementById('product-detail-container').style.display = 'block';
+    }
+
+    function goBackToList() {
+      document.getElementById('product-detail-container').style.display = 'none';
+      document.getElementById('product-list').style.display = 'flex';
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .box-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .box {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      cursor: pointer;
+      width: 200px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .box:hover {
+      transform: scale(1.05);
+    }
+
+    .the-front img {
+      width: 100%;
+      height: auto;
+    }
+
+    .product-price {
+      font-size: 18px;
+      color: #e60023;
+    }
+
+    .starRate {
+      color: #ffd700;
+    }
+
+    .product-detail-container {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .product-detail {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      max-width: 800px;
+      overflow: hidden;
+    }
+
+    .product-image img {
+      width: 300px;
+      height: auto;
+      border-right: 1px solid #ddd;
+    }
+
+    .product-info {
+      padding: 20px;
+    }
+
+    .product-name {
+      font-size: 24px;
+      margin: 0;
+      color: #333;
+    }
+
+    .product-price {
+      font-size: 20px;
+      color: #e60023;
+      margin: 10px 0;
+    }
+
+    .product-description {
+      margin: 20px 0;
+    }
+
+    .product-description h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .product-description p {
+      font-size: 16px;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    .btn-product, .btn-back {
+      background-color: #e60023;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    .btn-back {
+      background-color: #555;
+    }
+
+    .btn-product:hover {
+      background-color: #c5001d;
+    }
+
+    .btn-back:hover {
+      background-color: #333;
+    }
+  </style>
+</body>
+</html>

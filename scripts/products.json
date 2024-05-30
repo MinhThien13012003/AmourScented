@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "name": "Nến thơm Amour-Relaxing Scent",
+        "price": 149.000,
+        "image": "../images/Hinh-Da-Xoa-Nen/product-Nen.png"
+
+    },
+    {
+        "id": 2,
+        "name": "Nến thơm Amour-So Nice",
+        "price": 249.000,
+        "image": "../images/Hinh-Da-Xoa-Nen/product-Nen-2.png"
+
+    },
+    {
+        "id": 3,
+        "name": "Nến thơm Amour-Benevolence",
+        "price": 299.000,
+        "image": "../images/Hinh-Da-Xoa-Nen/procduct-Nen-3.png"
+
+    },
+    {
+        "id": 4,
+        "name": "Tinh dầu Amour-Hương biển",
+        "price": 195.00,
+        "image": "./images/Hinh-Da-Xoa-Nen/tinh dầu biển.png"
+
+    },
+    {
+        "id": 5,
+        "name": "Tinh dầu Amour-Hương trái cây",
+        "price": 210.000,
+        "image": "./images/Hinh-Da-Xoa-Nen/tinh dầu paradise.png"
+
+    },
+    {
+        "id": 6,
+        "name": "Tinh dầu Amour-Hương gỗ",
+        "price": 265.000,
+        "image": "./images/Hinh-Da-Xoa-Nen/Tinh dầu gỗ.png"
+
+    },
+    {
+        "id": 7,
+        "name": "Đá Aragonite",
+        "price": 250.000,
+        "image": "../images/Hinh-Da-Xoa-Nen/aragonite.png"
+
+    },
+    {
+        "id": 8,
+        "name": "Đá Rose Quarzt",
+        "price": 300.000,
+        "image": "../images/Hinh-Da-Xoa-Nen/rose.png"
+
+    },
+    {
+        "id": 9,
+        "name": "Đá Ruby",
+        "price": 500.000,
+        "image": "../images/Hinh-Da-Xoa-Nen/Ruby_da.png"
+
+    }
+]
